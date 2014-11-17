@@ -8,5 +8,11 @@
 
         }
     ],
-    "require": {}
+    "include-path": ["src/"],
+    "autoload": {
+        "classmap": [
+            "./",
+            "REXP/"
+        ]
+    }
 }

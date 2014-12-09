@@ -1,7 +1,7 @@
 <?php
 /**
  * Rserve native array wrapper
- * @author Clément Turbelin
+ * @author ClÃ©ment Turbelin
  * From Rserve java Client & php Client
  */
  
@@ -88,4 +88,7 @@ class Rserve_RNative implements ArrayAccess {
         return isset($this->data[$offset]) ? $this->data[$offset] : null;
     }
     
+    public function getData() {
+        return $this->data;
+    }
 }

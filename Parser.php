@@ -303,7 +303,9 @@ class Rserve_Parser {
             break;
             
             default:
-                echo 'Warning: type '.$ra.' is currently not implemented in the PHP client.';
+                // very dirty... return nothing
+                // TODO: proper error handling
+                //echo 'Warning: type '.$ra.' is currently not implemented in the PHP client.';
                 $a = NULL;
         } // end switch
         
